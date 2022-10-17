@@ -9,3 +9,5 @@ https://www.hackerearth.com/problem/algorithm/maximum-binary-number-cb9a58c1/
 https://www.hackerearth.com/practice/data-structures/arrays/1-d/practice-problems/algorithm/minimum-and-xor-or-6a05bbd4/
 # The Unlucky 13
 https://www.hackerearth.com/problem/algorithm/the-unlucky-13-d7aea1ff/
+# Monk and Nice Strings
+https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/practice-problems/algorithm/monk-and-nice-strings-3/
