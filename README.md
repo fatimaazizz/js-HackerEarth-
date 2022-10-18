@@ -11,3 +11,5 @@ https://www.hackerearth.com/practice/data-structures/arrays/1-d/practice-problem
 https://www.hackerearth.com/problem/algorithm/the-unlucky-13-d7aea1ff/
 # Monk and Nice Strings
 https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/practice-problems/algorithm/monk-and-nice-strings-3/
+# Monk and Suffix Sort
+https://www.hackerearth.com/problem/algorithm/monk-and-suffix-sort-ebacdaf5/
