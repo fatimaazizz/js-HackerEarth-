@@ -14,17 +14,18 @@ process.stdin.on("end", function () {
 });
 
 function main(input) {
-    process.stdout.write("Hi, " + input + ".\n");       // Writing output to STDOUT
+   // process.stdout.write("Hi, " + input + ".\n");       // Writing output to STDOUT
     let sarray=input.split(" ");
     let s=sarray[0];
     let n=parseInt(sarray[1]);
-    let sufix;
-    for(let i=0;i<s.length;i++);
+    let suffix=[];
+    for(let k=0;k<s.length;k++)
     {
-        suffix[i]=s[1:];
+
+        suffix.push(s.slice(k,s.length));
     }
     suffix.sort();
-     process.stdout.write(suffix[n] + "\n");
+     process.stdout.write(suffix[n-1] + "\n");
 
 }
 
