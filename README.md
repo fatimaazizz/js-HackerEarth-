@@ -13,3 +13,5 @@ https://www.hackerearth.com/problem/algorithm/the-unlucky-13-d7aea1ff/
 https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/practice-problems/algorithm/monk-and-nice-strings-3/
 # Monk and Suffix Sort
 https://www.hackerearth.com/problem/algorithm/monk-and-suffix-sort-ebacdaf5/
+# Monk being monitor
+https://www.hackerearth.com/problem/algorithm/monk-being-monitor-709e0fd3/
