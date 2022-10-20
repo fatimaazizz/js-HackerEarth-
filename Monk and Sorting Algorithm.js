@@ -20,17 +20,18 @@ function main(input) {
     let iteration=0;
     let newarr=array[1].split(" ")
     let newarray;
-    let breakit=false;
     let ac=0
     while(chunk--)
     {   
-        let comapare=[{}];
+        let comapare=[];
       for(let i=0;i<newarr.length;i++)
       
       { 
           let n=newarr[i].length;
+
           if (n<iteration*5)
            break;
+           
           let obj={value:'',weight:''};
           let lower=n-ac-5;
           let highest=n-ac;
@@ -40,28 +41,34 @@ function main(input) {
             breakit=false;
 
           }
-          if(highest<0 && highest>-5)
+          if((highest<=0)&& highest>-5)
           {
               highest=1;
           }
          
-         obj.value=newarr[i].slice(lower,highest);
+         obj.value=parseInt(newarr[i].slice(lower,highest));
          obj.weight=newarr[i];
-            // process.stdout.write(obj.value + "\n"); 
+        // process.stdout.write(obj.value + "\n"); 
          comapare[i]=obj;
         
       }
        iteration++;
-      ac+=6;
-      let array2=comapare.sort((a,b)=>(a.value>b.value) ? 1 : (a.value === b.value) ? 1 : -1);
+      ac+=5;
+      
+      
+       //process.stdout.write(comapare+"\n"); 
+       
+       //let array2=comapare.sort((a,b)=>(a.value>b.value) ? 1 : -1);
+       let array2=comapare.sort((a,b)=>(a.value>b.value) ? 1 : (a.value === b.value) ? 1 : -1);
       for(let i=0;i<array2.length;i++)
-      {
+      {  if(array2!=undefined)
+        {
           if(i!==array2.length-1)
           process.stdout.write(array2[i].weight + " ");  
           else
           process.stdout.write(array2[i].weight + "\n");  
+        }
       }
-     
     }
 }
 
