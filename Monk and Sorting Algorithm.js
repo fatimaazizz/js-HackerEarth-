@@ -32,7 +32,7 @@ function main(input) {
           if (n<iteration*5)
            break;
            
-          let obj={value:'',weight:''};
+          let obj={value:'',weight:'',times:iteration};
           let lower=n-ac-5;
           let highest=n-ac;
           if(lower<0 && highest>-5)
@@ -57,9 +57,8 @@ function main(input) {
       
       
        //process.stdout.write(comapare+"\n"); 
-       
-       //let array2=comapare.sort((a,b)=>(a.value>b.value) ? 1 : -1);
-       let array2=comapare.sort((a,b)=>(a.value>b.value) ? 1 : (a.value === b.value) ? 1 : -1);
+      // let array2=comapare.sort((a,b)=>(a.value>b.value) ? 1 : -1);
+       let array2=comapare.sort((a,b)=>(a.value>b.value) ? 1 : ((a.value === b.value)&& (a.times===0)) ? 1 : ((a.value === b.value)&& (a.times!=0)) ?);
       for(let i=0;i<array2.length;i++)
       {  if(array2!=undefined)
         {
